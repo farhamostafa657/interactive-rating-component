@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Orange-500: hsl(25, 97%, 53%);
+  --White: hsl(0, 100%, 100%);
+  --Grey-300: hsl(217deg 4.04% 53.38%);
+
+  --Grey-400: hsl(217deg 6.81% 31.35%);
+  --Grey-500: hsl(217, 12%, 63%);
+  --Grey-900: hsl(213, 19%, 18%);
+  --Grey-950: hsl(216, 12%, 8%);
+}
+
+body {
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+  background-color: var(--Grey-950);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  width: 35vw;
+  background-color: var(--Grey-900);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+
+  border-radius: 1em;
+  padding: 1em;
+}
+
+.star-box {
+  width: 1.5em;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--Grey-500);
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-box {
+  color: var(--White);
+  font-weight: 700;
+}
+
+.info-box p {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--Grey-500);
+  line-height: 1.6;
+}
+
+.stars-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.stars-box button {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  background-color: var(--Grey-400);
+  border: none;
+  color: var(--White);
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.stars-box button:hover {
+  background-color: var(--Orange-500);
+}
+
+.submit-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit-box button {
+  background-color: var(--Orange-500);
+  border: none;
+  border-radius: 1.9em;
+  width: 80%;
+  padding: 1em 0;
+  transition: background-color 0.3s;
+}
+.submit-box button:hover {
+  background-color: var(--White);
+}
+
+.customer-ratting {
+  color: var(--Orange-500);
+  font-size: 13px;
+  background-color: #3f3d3d;
+  padding: 0.5em 1em;
+  border-radius: 1.5em;
+}
+.thank {
+  color: var(--White);
+}
+
+.text {
+  color: var(--Grey-300);
+  text-align: center;
+  line-height: 1.6;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 2em;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--White);
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--Orange-500);
+  font-weight: bold;
+  margin: 0.4em;
+  cursor: pointer;
+}
+
+@media (max-width: 425px) {
+  .container {
+    width: 90vw;
+    padding: 1.5em;
+  }
+
+  .info-box h2 {
+    font-size: 20px;
+  }
+
+  .info-box p {
+    font-size: 14px;
+  }
+
+  .stars-box {
+    gap: 0.6em;
+  }
+
+  .stars-box button {
+    width: 2.2em;
+    height: 2.2em;
+    font-size: 14px;
+  }
+
+  .submit-box button {
+    width: 100%;
+    padding: 0.9em 0;
+  }
+
+  .customer-ratting {
+    font-size: 12px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+
+  .attribution {
+    font-size: 12px;
+    bottom: 1em;
+  }
+}
