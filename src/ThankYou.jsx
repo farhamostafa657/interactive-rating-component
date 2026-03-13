@@ -1,6 +1,6 @@
 function ThankYou({ index }) {
   return (
-    <main className="container">
+    <main className="container thank-card">
       <div className="img-box">
         <img
           src="./assets/images/illustration-thank-you.svg"
@@ -16,18 +16,6 @@ function ThankYou({ index }) {
         We appreciate you taking the time to give a rating. If you ever need
         more support, don’t hesitate to get in touch!
       </p>
-
-      <div className="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-          Frontend Mentor
-        </a>
-        . Coded by{" "}
-        <a href="https://www.frontendmentor.io/profile/farhamostafa657">
-          Farha Mostafa
-        </a>
-        .
-      </div>
     </main>
   );
 }

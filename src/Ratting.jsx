@@ -16,11 +16,11 @@ function Ratting({ index, dispatch }) {
         <div className="stars-box">
           {Array.from({ length: 5 }, (_, i) => (
             <button
-              style={{
-                backgroundColor: `${index === i ? "white" : ""}`,
-                color: `${index === i ? "black" : ""}`,
-              }}
-              className="selected"
+              // style={{
+              //   backgroundColor: `${index === i ? "white" : ""}`,
+              //   color: `${index === i ? "black" : ""}`,
+              // }}
+              className={index === i ? "selected" : ""}
               key={i}
               onClick={() => dispatch({ type: "rating", payload: i })}
             >

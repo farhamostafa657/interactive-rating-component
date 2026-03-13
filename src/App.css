@@ -37,6 +37,12 @@ body {
 
   border-radius: 1em;
   padding: 1em;
+
+  transition: transform 0.2s ease;
+}
+
+.container:hover {
+  transform: translateY(-3px);
 }
 
 .star-box {
@@ -76,12 +82,22 @@ body {
   background-color: var(--Grey-400);
   border: none;
   color: var(--White);
-  transition: background-color 0.3s;
+  transition:
+    transform 0.15s ease,
+    background-color 0.3s;
   cursor: pointer;
 }
 
 .stars-box button:hover {
+  transform: scale(1.2);
+
   background-color: var(--Orange-500);
+}
+
+.stars-box button.selected {
+  transform: scale(1.2);
+  background-color: white;
+  color: #232a34;
 }
 
 .submit-box {
@@ -109,6 +125,23 @@ body {
   background-color: #3f3d3d;
   padding: 0.5em 1em;
   border-radius: 1.5em;
+}
+
+.thank-card img {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
 .thank {
   color: var(--White);
